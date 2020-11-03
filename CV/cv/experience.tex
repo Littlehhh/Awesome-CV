@@ -1,7 +1,7 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Experience}
+\cvsection[atom]{科研 \& 项目}
 
 
 %-------------------------------------------------------------------------------
@@ -11,128 +11,61 @@
 
 %---------------------------------------------------------
   \cventry
-    {Software Architect} % Job title
-    {Omnious. Co., Ltd.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jun. 2017 - May. 2018} % Date(s)
+    {深度学习~~医学图像处理~~图像分割~~\href{https://vtk.org/}{\textbf{PyTorch}}} % keywords
+    {基于卷积编解码网络（CED）的膝关节骨结构分割} % project name
+    {复旦大学} % Location
+    {2019.5 - 2019.12} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Provisioned an easily managable hybrid infrastructure(Amazon AWS + On-premise) utilizing IaC(Infrastructure as Code) tools like Ansible, Packer and Terraform.}
-        \item {Built fully automated CI/CD pipelines on CircleCI for containerized applications using Docker, AWS ECR and Rancher.}
-        \item {Designed an overall service architecture and pipelines of the Machine Learning based Fashion Tagging API SaaS product with the micro-services architecture.}
-        \item {Implemented several API microservices in Node.js Koa and in the serverless AWS Lambda functions.}
-        \item {Deployed a centralized logging environment(ELK, Filebeat, CloudWatch, S3) which gather log data from docker containers and AWS resources.}
-        \item {Deployed a centralized monitoring environment(Grafana, InfluxDB, CollectD) which gather system metrics as well as docker run-time metrics.}
+        \item {探究使用深度学习的膝关节关键骨结构分割方法及应用}
+        \item {基于U型CED网络结构，引入全局信息支路，解决基于块模型的全局信息缺失问题}
+        \item {基于\href{https://vtk.org/}{PyTorch}实现训练及推理PipeLine}\\
+        \textbf{结果}~~同一公开数据集上取得已知文献中最高分割精度【Dice系数】骨0.96 软骨0.75，且能有效分割临床实际数据
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Co-founder \& Software Engineer} % Job title
-    {PLAT Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jan. 2016 - Jun. 2017} % Date(s)
+    {点云配准~~跨模态配准~~\href{https://itk.org/}{\textbf{ITK}}~~\href{https://pointclouds.org/}{\textbf{PCL}}} % Job title
+    {基于分割结构对齐的膝关节MR-CT跨模态配准} % keywords
+    {复旦大学} % project name
+    {2019.11 - 2020.4} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Implemented RESTful API server for car rental booking application(CARPLAT in Google Play).}
-        \item {Built and deployed overall service infrastructure utilizing Docker container, CircleCI, and several AWS stack(Including EC2, ECS, Route 53, S3, CloudFront, RDS, ElastiCache, IAM), focusing on high-availability, fault tolerance, and auto-scaling.}
-        \item {Developed an easy-to-use Payment module which connects to major PG(Payment Gateway) companies in Korea.}
+        \item {探究膝关节医学图像的MR-CT跨模态配准方法}
+        \item {基于MR和CT的分割标签采样对应表面点云，计算并匹配点云的特征点，计算变换矩阵完成配准}
+        \item {基于C++ \& \href{https://itk.org/}{ITK} \& \href{https://pointclouds.org/}{PCL}实现点云提取、特征计算及配准算法}\\
+        \textbf{结果}~~配准精度及鲁棒性高于基于体素灰度相似度的方法及基于ICP的配准方法
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Researcher} % Job title
-    {Undergraduate Research, Machine Learning Lab(Prof. Seungjin Choi)} % Organization
-    {Pohang, S.Korea} % Location
-    {Mar. 2016 - Exp. Jun. 2017} % Date(s)
+    {医学图像可视化~~\href{https://vtk.org/}{\textbf{VTK}}~~\href{https://www.qt.io/cn}{\textbf{QT}}} % Job title
+    {\href{http://ilab.fudan.edu.cn/med7}{人脑解剖与影像结构虚拟仿真实验教学系统}-数字脑2D\&3D可视化部分} % 
+    {复旦大学} % Organization
+    {2019.2 - 2019.5} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Researched classification algorithms(SVM, CNN) to improve accuracy of human exercise recognition with wearable device.}
-        \item {Developed two TIZEN applications to collect sample data set and to recognize user exercise on SAMSUNG Gear S.}
+        \item {探究医学图像的三维及二维可视化方法}
+        \item {借鉴开源医学图像计算和可视化软件平台 \href{https://www.slicer.org/}{3D Slicer}，使用\href{https://www.qt.io/cn}{QT} \& \href{https://vtk.org/}{VTK}框架，实现脑图像的断层及三维可视化}\\
+        \textbf{结果}~~实现可视化软件，能对脑结构进行三维表面及二维切面展示并显示结构标签，并能进行基础交互及三维二维联合交互\href{https://github.com/Littlehhh/Medical-Image-Visualization}{\textbf{【软件截图】}}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Software Engineer \& Security Researcher (Compulsory Military Service)} % Job title
-    {R.O.K Cyber Command, MND} % Organization
-    {Seoul, S.Korea} % Location
-    {Aug. 2014 - Apr. 2016} % Date(s)
+    {灰度共生矩阵~~模糊聚类~~ \href{https://opencv.org/}{\textbf{OpenCV}}} % Job title
+    {基于X波段雷达遥感数据的海面溢油反演算法及OpenCV实现} % Organization
+    {中国海洋大学 \& 国家海洋局第一海洋研究所} % Location
+    {2017.10 - 2018.4} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Lead engineer on agent-less backtracking system that can discover client device's fingerprint(including public and private IP) independently of the Proxy, VPN and NAT.}
-        \item {Implemented a distributed web stress test tool with high anonymity.}
-        \item {Implemented a military cooperation system which is web based real time messenger in Scala on Lift.}
+        \item {探究根据船载x波段雷达数据有效反演海表面溢油的方法}
+        \item {将雷达数据转换为数字图像，采用灰度共生矩阵提取图像的纹理特征，进行模糊聚类输出预警结果}
+        \item {使用C++\&OpenCV实现溢油反演算法，在实际船载溢油实验中应用}\\
+        \textbf{结果}~~能对海表面出现溢油进行有效预警，并且能计算溢油区域面积
       \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Game Developer Intern at Global Internship Program} % Job title
-    {NEXON} % Organization
-    {Seoul, S.Korea \& LA, U.S.A} % Location
-    {Jan. 2013 - Feb. 2013} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed in Cocos2d-x an action puzzle game(Dragon Buster) targeting U.S. market.}
-        \item {Implemented API server which is communicating with game client and In-App Store, along with two other team members who wrote the game logic and designed game graphics.}
-        \item {Won the 2nd prize in final evaluation.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Researcher for <Detecting video’s torrents using image similarity algorithms>} % Job title
-    {Undergraduate Research, Computer Vision Lab(Prof. Bohyung Han)} % Organization
-    {Pohang, S.Korea} % Location
-    {Sep. 2012 - Feb. 2013} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Researched means of retrieving a corresponding video based on image contents using image similarity algorithm.}
-        \item {Implemented prototype that users can obtain torrent magnet links of corresponding video relevant to an image on web site.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Software Engineer Trainee} % Job title
-    {Software Maestro (funded by Korea Ministry of Knowledge and Economy)} % Organization
-    {Seoul, S.Korea} % Location
-    {Jul. 2012 - Jun. 2013} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Performed research memory management strategies of OS and implemented in Python an interactive simulator for Linux kernel memory management.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Software Engineer} % Job title
-    {ShitOne Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Dec. 2011 - Feb. 2012} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed a proxy drive smartphone application which connects proxy driver and customer. Implemented overall Android application logic and wrote API server for community service, along with lead engineer who designed bidding protocol on raw socket and implemented API server for bidding.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Freelance Penetration Tester} % Job title
-    {SAMSUNG Electronics} % Organization
-    {S.Korea} % Location
-    {Sep. 2013, Mar. 2011 - Oct. 2011} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Conducted penetration testing on SAMSUNG KNOX, which is solution for enterprise mobile security.}
-        \item {Conducted penetration testing on SAMSUNG Smart TV.}
-      \end{cvitems}
-      %\begin{cvsubentries}
-      %  \cvsubentry{}{KNOX(Solution for Enterprise Mobile Security) Penetration Testing}{Sep. 2013}{}
-      %  \cvsubentry{}{Smart TV Penetration Testing}{Mar. 2011 - Oct. 2011}{}
-      %\end{cvsubentries}
     }
 
 %---------------------------------------------------------
